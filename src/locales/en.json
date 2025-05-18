@@ -1,0 +1,44 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "close": "Close"
+  },
+  "app": {
+    "title": "Musiversal Library",
+    "subtitle": "Manage your favorite songs",
+    "header": "Your Songs",
+    "emptyLibrary": "Your library is empty. Add your first song!"
+  },
+  "songForm": {
+    "title": "Add New Song",
+    "songName": "Song Name",
+    "artistName": "Artist Name",
+    "albumCover": "Album Cover",
+    "optional": "optional",
+    "dragDrop": "Drag and drop or click to upload",
+    "maxSize": "Max size: 2MB",
+    "addSong": "Add Song",
+    "addingStatus": "Adding Song...",
+    "editSong": "Edit Song"
+  },
+  "messages": {
+    "songAdded": "Song added successfully",
+    "songDeleted": "Song deleted successfully",
+    "songEdited": "Song updated successfully",
+    "failedToLoad": "Failed to load songs",
+    "failedToAdd": "Failed to add song",
+    "failedToDelete": "Failed to delete song",
+    "requiredFields": "Please fill in all required fields"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

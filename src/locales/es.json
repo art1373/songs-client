@@ -1,0 +1,42 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "close": "Cerrar"
+  },
+  "app": {
+    "title": "Biblioteca Musiversal",
+    "subtitle": "Administra tus canciones favoritas",
+    "header": "Tus Canciones",
+    "emptyLibrary": "Tu biblioteca está vacía. ¡Añade tu primera canción!"
+  },
+  "songForm": {
+    "title": "Añadir Nueva Canción",
+    "songName": "Nombre de la Canción",
+    "artistName": "Nombre del Artista",
+    "albumCover": "Portada del Álbum",
+    "dragDrop": "Arrastra y suelta o haz clic para subir",
+    "maxSize": "Tamaño máximo: 2MB",
+    "addSong": "Añadir Canción",
+    "addingStatus": "Añadiendo Canción...",
+    "editSong": "Editar Canción"
+  },
+  "messages": {
+    "songAdded": "Canción añadida con éxito",
+    "songDeleted": "Canción eliminada con éxito",
+    "songEdited": "Canción actualizada con éxito",
+    "failedToLoad": "Error al cargar canciones",
+    "failedToAdd": "Error al añadir canción",
+    "failedToDelete": "Error al eliminar canción"
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
