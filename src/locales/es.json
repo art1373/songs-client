@@ -33,7 +33,8 @@
     "songEdited": "Canción actualizada con éxito",
     "failedToLoad": "Error al cargar canciones",
     "failedToAdd": "Error al añadir canción",
-    "failedToDelete": "Error al eliminar canción"
+    "failedToDelete": "Error al eliminar canción",
+    "requiredField": "Completa todos los campos obligatorios"
   },
   "language": {
     "en": "Inglés",
