@@ -1,6 +1,6 @@
 import { Song, SongFormData } from "../types/song";
 
-const API_URL = "https://song-api-uptb.onrender.co/songs";
+const API_URL = "https://song-api-uptb.onrender.com/songs";
 
 export const songService = {
   // Get all songs
