@@ -1,6 +1,11 @@
 import { Song, SongFormData } from "../types/song";
 
-const API_URL = "https://song-api-uptb.onrender.com/songs";
+let API_URL;
+if (process.env.NODE_ENV === "production") {
+  API_URL = "https://song-api-uptb.onrender.com/songs"; // Replace with your production URL
+} else {
+  API_URL = "http://localhost:3000/songs"; // Replace with your development URL
+}
 
 export const songService = {
   // Get all songs

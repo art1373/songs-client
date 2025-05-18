@@ -45,7 +45,7 @@ export const useEditSongForm = (
 
       // Set image preview if imageUrl is a string
       if (song.imageUrl && typeof song.imageUrl === "string") {
-        setImagePreview(`http://localhost:3000/${song.imageUrl}`);
+        setImagePreview(`https://song-api-uptb.onrender.com/${song.imageUrl}`);
       } else {
         setImagePreview("");
       }
