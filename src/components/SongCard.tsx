@@ -30,7 +30,7 @@ const SongCard: React.FC<SongCardProps> = ({
           src={
             !song.imageUrl
               ? DefaultAlbumCover
-              : `http://localhost:3000/${song.imageUrl}`
+              : `https://song-api-uptb.onrender.com/${song.imageUrl}`
           }
           alt={`${song.name} by ${song.artist}`}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
