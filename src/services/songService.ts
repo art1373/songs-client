@@ -1,11 +1,12 @@
-
 import { Song, SongFormData } from "../types/song";
+
+const API_URL = "https://song-api-uptb.onrender.co/songs";
 
 export const songService = {
   // Get all songs
   getAllSongs: async (): Promise<Song[]> => {
     try {
-      const resp = await fetch("http://localhost:3000/songs");
+      const resp = await fetch(API_URL);
       const data = await resp.json();
       return data;
     } catch (error) {
@@ -24,7 +25,7 @@ export const songService = {
         formData.append("image", songData.imageUrl);
       }
 
-      const resp = await fetch("http://localhost:3000/songs", {
+      const resp = await fetch(API_URL, {
         method: "POST",
         body: formData,
       });
@@ -47,21 +48,21 @@ export const songService = {
       const formData = new FormData();
       formData.append("name", song.name);
       formData.append("artist", song.artist);
-      
+
       // Handle image URL or File
-      if (typeof song.imageUrl !== 'string' && song.imageUrl instanceof File) {
+      if (typeof song.imageUrl !== "string" && song.imageUrl instanceof File) {
         formData.append("image", song.imageUrl);
       }
 
-      const resp = await fetch(`http://localhost:3000/songs/${song.id}`, {
+      const resp = await fetch(`${API_URL}/${song.id}`, {
         method: "PUT",
         body: formData,
       });
-      
+
       if (!resp.ok) {
         throw new Error("Failed to edit song");
       }
-      
+
       const updatedSong = await resp.json();
       return updatedSong;
     } catch (error) {
@@ -73,7 +74,7 @@ export const songService = {
   // Delete a song
   deleteSong: async (id: string): Promise<boolean> => {
     try {
-      const resp = await fetch(`http://localhost:3000/songs/${id}`, {
+      const resp = await fetch(`${API_URL}/${id}`, {
         method: "DELETE",
       });
 
