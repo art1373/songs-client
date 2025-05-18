@@ -35,7 +35,7 @@
     "failedToLoad": "Failed to load songs",
     "failedToAdd": "Failed to add song",
     "failedToDelete": "Failed to delete song",
-    "requiredFields": "Please fill in all required fields"
+    "requiredField": "Please fill in all required fields"
   },
   "language": {
     "en": "English",
