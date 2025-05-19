@@ -2,9 +2,9 @@ import { Song, SongFormData } from "../types/song";
 
 let API_URL;
 if (process.env.NODE_ENV === "production") {
-  API_URL = "https://song-api-uptb.onrender.com/songs"; // Replace with your production URL
+  API_URL = "https://song-api-uptb.onrender.com/songs";
 } else {
-  API_URL = "http://localhost:3000/songs"; // Replace with your development URL
+  API_URL = "http://localhost:3000/songs";
 }
 
 export const songService = {
@@ -20,6 +20,7 @@ export const songService = {
     }
   },
 
+  // Add a new song
   addSong: async (songData: SongFormData): Promise<Song> => {
     try {
       const formData = new FormData();

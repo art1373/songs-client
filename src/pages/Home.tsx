@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Toaster } from "@/components/ui/sonner";
@@ -86,8 +85,7 @@ const Home = () => {
           <div className="absolute top-0 right-0">
             <LanguageSwitcher />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-            <span className="text-music-primary">Music</span>
+          <h1 className="text-3xl md:text-4xl font-bold text-music-primary mb-2">
             {t("app.title")}
           </h1>
           <p className="text-zinc-400">{t("app.subtitle")}</p>
@@ -142,7 +140,7 @@ const Home = () => {
       </div>
 
       {isMobile && <MobileAddButton />}
-      
+
       <EditSongDialog
         song={editingSong}
         isOpen={isEditModalOpen}
